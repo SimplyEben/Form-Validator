@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="validator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="header">Registration</h1>
+      <form id="my-form">
+        <div id="user-name">
+          <label>Username</label>
+          <input
+            type="text"
+            id="text-box"
+            placeholder="Enter username"
+            required
+          />
+          <p id="name-text"></p>
+        </div>
+        <div id="e-mail">
+          <label>Email</label>
+          <input
+            type="email"
+            id="mail-box"
+            placeholder="Enter email"
+            spellcheck="false"
+            required
+          /> 
+          <!-- pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,}$" -->
+          <p id="mailing"></p>
+        </div>
+        <div id="pass">
+          <label>Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Password" autocomplete="off"
+            required
+          />
+          <p id="paxword"></p>
+        </div>
+        <div id="confirm">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            id="con-password"
+            placeholder="Enter Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).{14,}"
+            required
+          />
+          <p id="confirm-password"></p>
+        </div>
+
+        <input type="submit" id="sub-input" value="Submit" />
+      </form>
+    </div>
+
+    <script src="validator.js"></script>
+  </body>
+</html>
