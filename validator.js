@@ -17,13 +17,13 @@ function submitBox() {
     let passwordBox = password.value;
     if(nameBox.length < 4) {
         nameText.textContent = `Username must be at least 3 characters`; 
-        textBox.style.border = "1px solid red"
+        textBox.style.border = "1px solid #e74c3c";
         setTimeout(function() {
             nameText.textContent = "";
         }, 3000)
     }
     else {
-        textBox.style.border = "2px solid green";
+        textBox.style.border = "2px solid #2ecc71";
     }
 
     
@@ -34,7 +34,7 @@ function submitBox() {
         mailText.textContent = "";
       }, 3000);
     } else {
-      mailBox.style.border = "2px solid green";
+      mailBox.style.border = "2px solid #2ecc71";
     }
 
     if (password.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
@@ -44,7 +44,7 @@ function submitBox() {
         passText.textContent = "";
       }, 3000);
     } else {
-      password.style.border = "2px solid green";
+      password.style.border = "2px solid #2ecc71";
     }
 
     if (confirmPassword.value === "" || confirmPassword.value !== password.value) {
@@ -54,6 +54,7 @@ function submitBox() {
         confirmText.textContent = "";
       }, 3000);
     } else {
-      confirmPassword.style.border = "2px solid green";
+      confirmPassword.style.border = "2px solid #2ecc71";
     }
+
 }

@@ -9,14 +9,14 @@
   margin: 100px auto;
   padding: 30px 80px;
   background-color: #fff;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
 
 #header {
     font-size: 50px;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     font-family: "Source";
     font-style: italic;
 }
@@ -24,7 +24,7 @@
 label {
   display: block;
   margin: 5px 0;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", monospace;; 
   font-style: italic;
   font-size: 36px;
   font-weight: 700;
@@ -35,15 +35,15 @@ input {
   width: 100%;
   font-size: 30px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f0f0f0;
   border-radius: 5px;
   box-sizing: border-box;
   letter-spacing: 2px;
 }
 
 input:focus {
-    border-color:  gray;
-    outline:#a4a4a4;
+    border-color: #777;
+    outline:2px solid #777;
 }
 
 input[type="submit"] {
@@ -57,6 +57,6 @@ div{
     margin: 10px 0 50px 0;
 }
 p {
-    color: red;
+    color: #e74c3c;
     font-size: 24px;
 }
