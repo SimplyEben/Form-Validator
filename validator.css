@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+#my-form {
+    padding: 20px 40px;
+    border: 2px solid red
+}
+
 #container {
   max-width: 800px;
+  border: 2px solid red;
   margin: 100px auto;
-  padding: 30px 80px;
+  padding: 20px 50px;
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -23,7 +29,7 @@
 
 label {
   display: block;
-  margin: 5px 0;
+  margin: 10px 0;
   font-family: "Source Code Pro", monospace;; 
   font-style: italic;
   font-size: 36px;
