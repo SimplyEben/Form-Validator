@@ -11,7 +11,9 @@ let confirmText = document.getElementById("confirm-password")
 
 subInput.addEventListener("click", submitBox);
 
-function submitBox() {
+function submitBox(event) {
+    let valid = true;
+    event.preventDefault();
     let nameBox = textBox.value;
     let mailField = mailBox.value;
     let passwordBox = password.value;
@@ -21,6 +23,7 @@ function submitBox() {
         setTimeout(function() {
             nameText.textContent = "";
         }, 3000)
+        valid = false;
     }
     else {
         textBox.style.border = "2px solid #2ecc71";
@@ -33,6 +36,7 @@ function submitBox() {
       setTimeout(function () {
         mailText.textContent = "";
       }, 3000);
+      valid = false;
     } else {
       mailBox.style.border = "2px solid #2ecc71";
     }
@@ -43,6 +47,7 @@ function submitBox() {
       setTimeout(function () {
         passText.textContent = "";
       }, 3000);
+      valid = false;
     } else {
       password.style.border = "2px solid #2ecc71";
     }
@@ -53,8 +58,14 @@ function submitBox() {
       setTimeout(function () {
         confirmText.textContent = "";
       }, 3000);
+      valid = false;
     } else {
       confirmPassword.style.border = "2px solid #2ecc71";
     }
+
+    if(valid){
+window.location.replace("success.html");
+    }
+    return;
 
 }
